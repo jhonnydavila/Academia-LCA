@@ -403,7 +403,7 @@ header{
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
 /*---------------------------------------------------------HERO----------------------------------------------------------*/
 .inicio__hero{
-    background-image: linear-gradient(90deg, #000000, #00000050), url(/img/image3.jpg);
+    background-image: url(/img/image3.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -1133,3 +1133,4 @@ header{
     width: 70%;
     }
 }
+
