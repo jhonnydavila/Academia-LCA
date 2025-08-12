@@ -335,10 +335,9 @@ header{
     display: flex;
     flex-direction: column;
     padding: 50px;
-    justify-content: space-around;
     gap: 30px;
 }
-.footer__div1, .footer__div2, .footer__div3, .footer__div4{
+.footer__div1, .footer__div2, .footer__div3, .footer__list-4{
     flex-direction: column;
     align-items: start;
     text-align: left;
@@ -374,7 +373,7 @@ header{
     margin-top: 5px;
     width: 40px;
 }
-.footer__div2 a, .footer__div4 a{
+.footer__div2 a, .footer__list-4 a{
     color: #e6e6e6;
     width: 100%;
     padding: 10px 0;
@@ -382,14 +381,32 @@ header{
 .footer__div2 a{
     border-top: 2px solid #414141d0;
 }
-.footer__div2 a:nth-child(2), .footer__div3 span:nth-child(2), .footer__div4 a:nth-child(2){
+.footer__div2 a:nth-child(2), .footer__div3 span:nth-child(2), .footer__list-4-item:nth-child(2){
     margin-top: 5px;
     border: none;
 }
-.footer__div4 p{
+.footer__list-4-item{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.footer__list-4-item-dev{
+    width: 70%;
+}
+.footer__list-4-item-dev-redes{
+    display: flex;
+    width: 30%;
+    gap: 6px;
+}
+.footer__list-4-item-dev-redes-icon{
+    width: 18px;
+    height: 18px;
+}
+.uptaeb{
     padding-top: 8px;
     border-top: 2px solid #414141d0;
     font-weight: 600;
+    width: 100%;
 }
 .footer__logo-uptaeb{
     width: 40%;
@@ -441,6 +458,7 @@ header{
     position: absolute;
     display: flex;
     z-index: 20;
+    animation: aparecer 4s both;
 }
 .inicio__hero-info h2{
     color:#baaa33;
@@ -470,6 +488,9 @@ header{
     text-align: center;
     width: 100%;
     margin: 60px auto;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 20% cover 70%;
 }
 .inicio__enfoque-title{
     color:#baaa33;
@@ -526,63 +547,17 @@ header{
 }
 /*----------------------------------------------------NOSOTROS INICIO----------------------------------------------------*/
 
-/*-----------------------------------------------------CLASES INICIO-----------------------------------------------------*/
-.inicio__clases{
-    justify-items: center;
-    margin: 5em 0;
-}
-.inicio__clases-list{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
-}
-.inicio__clases-item{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-.inicio__clases-img{
-    width: 100%;
-    height: 60vh;
-    border-radius: 5px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-}
-.inicio__clases-img:hover{
-    transform: translateY(-2px) scale(1.03);
-}
-.inicio__clases-item h3{
-    padding-top: .4em;
-    color: #baaa33;
-}
-.inicio__clases-btn{
-    border: none;
-    background: none;
-    width: 100%;
-}
-.inicio__clases-btn a{
-    color: #e6e6e6;
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-}
-.inicio__clases-btn a:hover{
-    color: #ffffff;
-}
-.inicio__clases-icon{
-    width: 1.5em;
-}
-/*-----------------------------------------------------CLASES INICIO-----------------------------------------------------*/
-
 /*----------------------------------------------------PROGRAMAS INICIO---------------------------------------------------*/
 .inicio__programas{
     justify-items: center;
     text-align: center;
     margin: 40px 20px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 20% cover 70%;
+}
+.inicio__programas-title{
+    color: #baaa33;
 }
 .inicio__programas-list{
     justify-content: center;
@@ -638,20 +613,21 @@ header{
 
 /*---------------------------------------------------ACTIVIDADES INICIO--------------------------------------------------*/
 .inicio__actividades{
-    background-color: #2a0202;
+    background: linear-gradient(#000c1a, #2a0202);
     justify-items: center;
-    padding: 25px 0;
+    padding: 60px 0;
 }
 .inicio__actividades-list{
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
     width: 100%;
-    gap: 10px;
-    padding: 25px 0;
+    gap: 20px;
+    padding: 25px 15px;
 }
 .inicio__actividades-item{
-    width: 40%;
+    height: 360px;
+    width: 320px;
 }
 .inicio__actividades-item-img{
     height:100%;
@@ -664,7 +640,7 @@ header{
     background-color: #000000;
     width: 100%;
     height: 40vh;
-    margin: 50px 0;
+    margin: 0 0 50px 0;
     position: relative;
     display: flex;
 }
@@ -672,6 +648,7 @@ header{
     opacity: 0.6;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .n-info{
     justify-content: center;
@@ -710,12 +687,12 @@ header{
 }
 .nosotros__historia-img{
     width: 100%;
-    height: 65vh;
+    height: 60vh;
     object-fit: cover;
-    object-position: 0% 20%;
+    object-position: center center;
 }
 .nosotros__historia-info-title{
-    color: #eedd5d;
+    color: #baaa33;
 }
 .nosotros__historia-info{
     width: 100%;
@@ -740,13 +717,16 @@ header{
 .mvv-cre{
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 35px;
     z-index: 20;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
     background-color: #2a0202;
+}
+.mvv-title{
+    color: #baaa33;
 }
 .mvv1{
     width: 100%;
@@ -767,7 +747,7 @@ header{
     width: 100%;
     height: 100%;
     padding: 40px 0;
-    background-image: linear-gradient(#0000007c), url(/img/image.png);
+    background-image: linear-gradient(#0000007c), url("/img/image.png");
     background-position: center;
     background-size: cover;
 }
@@ -776,49 +756,14 @@ header{
 }
 /*------------------------------------------------------HISTORIA---------------------------------------------------------*/
 
-/*------------------------------------------------------ENFOQUE----------------------------------------------------------*/
-.nosotros__enfoque{
-    align-items: center;
-}
-.nosotros__enfoque-list{
-    padding: 20px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
-}
-.nosotros__enfoque-item{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    background-color: #011328;
-    border-radius: 5px;
-    padding: 20px;
-}
-.nosotros__enfoque-item-info{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 8px;
-    padding: 0 15px;
-}
-.nosotros__enfoque-item-icon{
-    object-fit: contain;
-    align-self: center;
-    width: 35px;
-}
-/*------------------------------------------------------ENFOQUE----------------------------------------------------------*/
-
 /*------------------------------------------------------DOCENTES---------------------------------------------------------*/
 .nosotros__docentes{
     background: linear-gradient(#000c1a, #2a0202);
     text-align: center;
-    padding: 50px 0 70px 0;
+    padding: 50px 5px 70px 5px;
 }
 .nosotros__docentes-list{
-    gap: 15px;
+    gap: 25px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -917,6 +862,9 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #011328;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 10% cover 50%;
 }
 .programas__clases-item-img{
     width: 100%;
@@ -942,11 +890,15 @@ header{
 
 /*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 .programas{
-    align-items: center;
+    text-align: center;
+}
+.programas-title{
+    color: #baaa33;
 }
 .programas-list{
     justify-content: space-evenly;
     align-items: center;
+    text-align: left;
     flex-wrap: wrap;
     display: flex;
     padding: 40px;
@@ -1049,7 +1001,7 @@ header{
 }
 .blog__hero-img{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover;
     object-position: center;
 }
@@ -1125,6 +1077,14 @@ header{
     70% { margin-left: -200%; }
     100% { margin-left: -200%; }
 }
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
 
 
@@ -1176,10 +1136,6 @@ header{
         padding: 0 30px;
         gap: 3em;
     }
-    .inicio__actividades-item{
-    height: 400px;
-    width: 300px;
-    }
     .nosotros__historia{
     margin: 50px auto;
     flex-direction: row;
@@ -1211,6 +1167,9 @@ header{
     .actividades__galery-list{
     grid-template-columns: repeat(3, 1fr);
     }
+    .blog__hero-img{
+    height: 80vh;
+    }
     .blog__eventos-item{
     flex-direction: column;
     max-width: 300px;
@@ -1238,15 +1197,10 @@ header{
     justify-content: space-around;
     }
     .footers{
-    display: flex;
     flex-direction: row;
     }
-    .footer-div1, .footer-div2, .footer-div3, .footer-div4{
-    flex-direction: column;
-    align-items: start;
-    text-align: left;
-    display: flex;
-    width: 20%;
+    .footer__div1, .footer__div2, .footer__div3, .footer__list-4{
+    width: 25%;
     }
     @keyframes slide{
     0% { margin-left: 0; }
