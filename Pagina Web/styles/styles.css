@@ -11,7 +11,7 @@ html{
     font-size: 10px;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     color: #e6e6e6;
     background-color: #000c1a;
@@ -1149,4 +1149,5 @@ header{
     100% { margin-left: -300%; }
     }
 }
+
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
