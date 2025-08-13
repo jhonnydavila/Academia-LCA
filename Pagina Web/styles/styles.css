@@ -478,7 +478,6 @@ header{
 .n{
     background: linear-gradient(90deg, #000000d8,#00000092), url("../img/Asientos-teatro.jpg");
     background-position: center center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1133,6 +1132,9 @@ header{
     .mv{
     flex-direction: row;
     }
+    .n{
+    background-attachment: fixed;
+    }
     .mvv-cre{
     width: 30%;
     height: 100%;
@@ -1157,4 +1159,5 @@ header{
     100% { margin-left: -300%; }
     }
 }
+
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
