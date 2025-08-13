@@ -921,6 +921,8 @@ header{
     display: flex;
     height: 40vh;
     width: 100%;
+    animation: fondo 15s linear infinite;
+    background-position: center center;
 }
 .contacto__hero h2{
     font-size: 4rem;
@@ -1037,6 +1039,15 @@ header{
     48% { margin-left: -100%; }
     100% { margin-left: -100%; }
 }
+@keyframes fondo{
+    0% { background-image: url("../img/image4.jpg");}
+    40% { background-image: url("../img/image4.jpg");}
+
+    50% { background-image: url("../img/image5.jpg"); }
+    90% { background-image: url("../img/image5.jpg"); }
+
+    100% { background-image: url("../img/image6.jpg"); }
+}
 @keyframes aparecer{
     from{
         opacity: 0;
@@ -1149,4 +1160,5 @@ header{
     100% { margin-left: -300%; }
     }
 }
+
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
