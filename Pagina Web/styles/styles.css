@@ -358,7 +358,8 @@ header{
 .inicio__hero-info-logo{
     background-color: #e6e6e6;
     border-radius: 100%;
-    width: 20dvw;
+    width: 30vw;
+    max-width: 280px;
 }
 .inicio__hero-info-btn{
     display: flex;
@@ -1183,4 +1184,5 @@ header{
     100% { margin-left: -300%; }
     }
 }
+
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
