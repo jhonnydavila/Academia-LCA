@@ -389,9 +389,9 @@ header{
     background: linear-gradient(#2a0202, #000c1a);
 }
 .nosotros__mvv-list{
-    padding: 80px 0;
+    padding: 80px 20px;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
@@ -399,6 +399,7 @@ header{
 }
 .nosotros__mvv-item{
     width: 100%;
+    padding: 15px 0;
     max-width: 600px;
 }
 .nosotros__mvv-item-img{
