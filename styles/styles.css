@@ -380,7 +380,7 @@ header{
 }
 .nosotros__historia-info{
     width: 100%;
-    padding: 0 30px;
+    padding: 30px;
     display: flex;
     text-align: justify;
     flex-direction: column;
@@ -392,7 +392,7 @@ header{
     background: linear-gradient(#2a0202, #000c1a);
 }
 .nosotros__mvv-list{
-    padding: 60px 20px;
+    padding: 50px 20px;
     width: 100%;
     gap: 20px;
     display: flex;
@@ -591,10 +591,36 @@ header{
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
 
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
+.actividades__main{
+    background: linear-gradient(#000000,#000000, #011328);
+}
+.actividades__carrusel{
+    width: 100%;
+    padding: 80px;
+}
+.actividades__carrusel-list-container{
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+.actividades__carrusel-list{
+    display: flex;
+    width: 400%;
+    height: 70dvh;
+    animation: slider 20s infinite;
+}
+.actividades__carrusel-item{
+    width: 100%;
+    height: 100%;
+}
+.actividades__carrusel-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*--------------------------------------------------------GALERIA--------------------------------------------------------*/
 .actividades__galery{
-    padding: 80px 30px;
-    background: linear-gradient(#000c1a,#00030a);
+    padding: 50px 30px;
 }
 .actividades__galery-list{
     display: grid;
@@ -759,6 +785,19 @@ header{
         opacity: 1;
     }
 }
+@keyframes slider{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
 @media (min-width:750px){
@@ -819,10 +858,7 @@ header{
     .actividades__galery-item-info p{
     width: 70%;
     }
-    .contacto__academia-container{
-    flex-direction: row;
-    }
-    .contacto__desarrollo{
+    .contacto__academia-container, .contacto__desarrollo{
     flex-direction: row;
     }
 }
