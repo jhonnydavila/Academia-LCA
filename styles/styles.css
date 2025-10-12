@@ -136,7 +136,7 @@ header{
     align-items: center;
     text-align: center;
     display: flex;
-    height: 90dvh;
+    height: 100dvh;
     width: 100%;
 }
 .hero-img{
@@ -246,24 +246,28 @@ header{
 
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
 /*------------------------------------------------------HERO INICIO------------------------------------------------------*/
-.inicio__hero-info-logo{
-    background-color: #e6e6e6;
-    border-radius: 100%;
-    width: 45vw;
-    max-width: 280px;
-}
-.inicio__hero-info-btn{
-    display: flex;
-    justify-content: center;
+.inicio__hero-btn{
+    background-color: transparent;
+    margin-top: 30px;
+    border: none;
     width: 100%;
-    gap: 10px;
+}
+.inicio__hero-icon{
+    width: 40px;
+    rotate: 90deg;
+    border-radius: 100%;
+    transition: all .5s ease-in-out;
+}
+.inicio__hero-icon:hover{
+    background-color: #242424;
+    transition: all .2s ease-in-out;
 }
 /*------------------------------------------------------HERO INICIO------------------------------------------------------*/
 /*--------------------------------------------------------ENFOQUE--------------------------------------------------------*/
 .inicio__enfoque{
     text-align: center;
     width: 100%;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
 .inicio__enfoque-title{
@@ -283,9 +287,9 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 15px 0;
-    max-width: 340px;
-    border-radius: 5px;
+    padding: 20px 0;
+    max-width: 360px;
+    border-radius: 6px;
     background-color: #011328;
 }
 .inicio__enfoque-item-icon{
@@ -306,77 +310,20 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 90dvh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .inicio__nosotros-info{
     width: 100%;
-    max-width: 800px;
+    max-width: 855px;
     text-align: center;
 }
 .inicio__nosotros-info p{
     padding: 10px
 }
 /*----------------------------------------------------NOSOTROS INICIO----------------------------------------------------*/
-/*-------------------------------------------------------PREGUNTAS-------------------------------------------------------*/
-.inicio__faq{
-    margin: 60px auto;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-.inicio__faq-list{
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    margin-top: 25px;
-    width: 80%;
-    max-width: 800px;
-    gap: 15px;
-}
-.inicio__faq-item{
-    width: 100%;
-    color: #011328;
-    display: block;
-    text-align: left;
-}
-.inicio__faq-item-title{
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    z-index: 20;
-    padding: 10px 20px;
-    background-color: #d7c74d;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.inicio__faq-item input{
-    display: none;
-}
-.inicio__faq-item-info{
-    height: 0;
-    z-index: 10;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #eddd63;
-    transition: height 0.3s ease;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-.inicio__faq-item-info p{
-    padding: 20px;
-}
-.inicio__faq-item input:checked ~ .inicio__faq-item-info{
-    transition: height 0.3s ease;
-    height: 90px;
-}
-/*------------------------------------------------------PREGUNTAS--------------------------------------------------------*/
 .n{
     background: linear-gradient(90deg, #000000d8,#00000092), url("../img/Asientos-teatro.jpg");
     background-position: center center;
@@ -439,14 +386,15 @@ header{
 /*--------------------------------------------------------MVV------------------------------------------------------------*/
 .nosotros__mvv{
     width: 100%;
-    background-color: #2a0202;
+    background: linear-gradient(#2a0202, #000c1a);
 }
 .nosotros__mvv-list{
-    padding: 30px 0;
+    padding: 80px 0;
     width: 100%;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
+    text-align: justify;
     justify-content: space-evenly;
 }
 .nosotros__mvv-item{
@@ -570,8 +518,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     padding: 20px 35px;
+    text-align: justify;
+    width: 100%;
     gap: 10px;
 }
 .clases__-item-info h3{
@@ -582,7 +531,6 @@ header{
     gap: 10px;
 }
 /*----------------------------------------------------SECCION CLASES-----------------------------------------------------*/
-
 
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
 .programas{
@@ -606,7 +554,7 @@ header{
     position: relative;
     flex-direction: column;
     display: flex;
-    border-radius: 5px;
+    border-radius: 8px;
     height: 40dvh;
     width: 100%;
     max-width: 620px;
@@ -651,7 +599,6 @@ header{
     justify-content: space-between;
 }
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
-
 
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
 /*--------------------------------------------------------GALERIA--------------------------------------------------------*/
@@ -703,6 +650,10 @@ header{
 
 
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
+.contacto__hero{
+    height: 40dvh;
+}
+
 .contacto__academia{
     width: 100%;
     padding: 30px;
@@ -710,6 +661,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 30px 0;
 }
 .contacto__academia-container{
     gap: 30px;
@@ -720,21 +672,13 @@ header{
 .contacto__academia-list{
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 100%;
     width: 100%;
     gap: 10px;
 }
-.contacto__academia-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    height: 100%;
-}
-.contacto__academia-info h4, .contacto__desarrollo h4{
-    color: #cbcbcb;
+
+.contacto__academia-item{
+    background-color: #011328;
 }
 .contacto__academia-item-icon{
     width: 80px;
@@ -742,6 +686,19 @@ header{
 .contacto__academia-item-redes-icon{
     width: 35px;
 }
+.contacto__academia-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 75%;
+    height: 100%;
+}
+.contacto__academia-info h4, .contacto__desarrollo h4{
+    color: #cbcbcb;
+}
+
 .contacto__academia-ubicacion{
     width: 100%;
     height: auto;
@@ -759,11 +716,14 @@ header{
 }
 .contacto__academia-ubicacion-mapa{
     width: 100%;
-    height: 70dvh;
+    height: 65dvh;
+    margin-bottom: 40px;
 }
+
 .contacto__desarrollo{
     flex-direction: column;
     display: flex;
+    margin-bottom: 50px;
     padding: 30px;
     width: 100%;
     gap: 30px;
@@ -776,24 +736,12 @@ header{
     justify-content: center;
     gap: 8px;
     width: 100%;
-    height: 50dvh;
+    height: 350px;
     padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 12px 0px #121212;
-}
-.contacto__academia-item{
-    background: linear-gradient(#000000c1), url("../img/27eb242d086793eb602e44319679ecf6.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 8px;
 }
 .contacto__desarrollo-uptaeb, .contacto__desarrollo-devs{
-    background: linear-gradient(#000000c1), url("../img/360_F_321862768_UkKvWBv7XUhgeCtBx3mW1829qGnrqanB.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #011328;
 }
 .contacto__desarrollo-uptaeb-icon{
     width: 100px;
@@ -838,7 +786,7 @@ header{
     font-size: 1.2em;
     }
     .nosotros__historia{
-    margin: 50px auto;
+    margin: 80px auto;
     flex-direction: row;
     }
     .nosotros__historia-img{
@@ -854,7 +802,7 @@ header{
     }
     .clases__item-img{
     width: 50%;
-    height: 500px;
+    height: 425px;
     }
     .clases__item-info{
     width: 50%;
