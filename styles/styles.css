@@ -130,7 +130,7 @@ header{
     color: #baaa33;
 }
 /*-------------------------------------------------MENU DE NAVEGACION----------------------------------------------------*/
-/*-------------------------------------------------------HERO------------------------------------------------------------*/
+/*--------------------------------------------------------HEROS----------------------------------------------------------*/
 .hero{
     background-color: #000000;
     justify-content: center;
@@ -165,8 +165,8 @@ header{
 .hero-info h2{
     color:#baaa33;
 }
-/*---------------------------------------------------------HERO----------------------------------------------------------*/
-/*--------------------------------------------------------BOTONES--------------------------------------------------------*/
+/*--------------------------------------------------------HEROS----------------------------------------------------------*/
+/*-------------------------------------------------------BOTONES---------------------------------------------------------*/
 .scroll{
     width: 50px;
     right: 20px;
@@ -226,7 +226,7 @@ header{
 .btn-2 a:hover{
     color: #baaa33;
 }
-/*-------------------------------------------------------BOTONES---------------------------------------------------------*/
+/*------------------------------------------------------BOTONES----------------------------------------------------------*/
 /*-------------------------------------------------------FOOTER----------------------------------------------------------*/
 .footer__derechos div{
     padding: 12px 0;
@@ -243,6 +243,7 @@ header{
 }
 /*-------------------------------------------------------FOOTER----------------------------------------------------------*/
 /*----------------------------------------------CONFIGURACIONES GENERALES------------------------------------------------*/
+
 
 
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
@@ -303,28 +304,6 @@ header{
     flex-direction: column;
 }
 /*--------------------------------------------------------ENFOQUE--------------------------------------------------------*/
-/*----------------------------------------------------NOSOTROS INICIO----------------------------------------------------*/
-.inicio__nosotros{
-    background-image: linear-gradient(#000000aa), url("../img/fondo\ textura\ cortina\ rojo.avif");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 90dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.inicio__nosotros-info{
-    width: 100%;
-    max-width: 855px;
-    text-align: center;
-}
-.inicio__nosotros-info p{
-    padding: 10px
-}
-/*----------------------------------------------------NOSOTROS INICIO----------------------------------------------------*/
 .n{
     background: linear-gradient(90deg, #000000d8,#00000092), url("../img/Asientos-teatro.jpg");
     background-position: center center;
@@ -358,6 +337,7 @@ header{
     justify-content: start;
 }
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
+
 
 
 /*---------------------------------------------------SECCION NOSOTROS----------------------------------------------------*/
@@ -474,7 +454,9 @@ header{
 /*---------------------------------------------------SECCION NOSOTROS----------------------------------------------------*/
 
 
+
 /*----------------------------------------------------SECCION CLASES-----------------------------------------------------*/
+/*--------------------------------------------------------CLASES---------------------------------------------------------*/
 .clases{
     background: linear-gradient(#000c1a,#00030a);
     padding: 50px 35px;
@@ -520,9 +502,12 @@ header{
     display: flex;
     gap: 10px;
 }
+/*--------------------------------------------------------CLASES---------------------------------------------------------*/
 /*----------------------------------------------------SECCION CLASES-----------------------------------------------------*/
 
+
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
+/*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 .programas{
     text-align: center;
     padding: 80px 20px;
@@ -588,12 +573,16 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+/*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
+
+
 
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
 .actividades__main{
     background: linear-gradient(#000000,#000000, #011328);
 }
+/*-------------------------------------------------------CARRUSEL--------------------------------------------------------*/
 .actividades__carrusel{
     width: 100%;
     padding: 40px;
@@ -607,7 +596,7 @@ header{
     display: flex;
     width: 400%;
     height: 50dvh;
-    animation: slider 20s infinite;
+    animation: carrusel 20s infinite;
 }
 .actividades__carrusel-item{
     width: 100%;
@@ -618,6 +607,7 @@ header{
     height: 100%;
     object-fit: cover;
 }
+/*-------------------------------------------------------CARRUSEL--------------------------------------------------------*/
 /*--------------------------------------------------------GALERIA--------------------------------------------------------*/
 .actividades__galery{
     padding: 40px;
@@ -665,65 +655,69 @@ header{
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
 
 
+
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
+/*-----------------------------------------------------HERO CONTACTO-----------------------------------------------------*/
 .contacto__hero{
     height: 40dvh;
 }
-
-.contacto__academia{
+/*-----------------------------------------------------HERO CONTACTO-----------------------------------------------------*/
+.contacto__container{
     width: 100%;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    padding: 40px;
+    gap: 50px;
 }
-.contacto__academia-container{
-    gap: 30px;
-    width: 100%;
+.contacto__list{
     display: flex;
-    flex-direction: column;
-}
-.contacto__academia-list{
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 100%;
+    gap: 50px;
+}
+.contacto__item{
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+.contacto__item-info{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 10px;
-}
-.lca{
-    background-color: #ffffff;
-    border-radius: 100%;
-}
-
-.contacto__academia-item{
+    width: 100%;
+    height: 350px;
+    padding: 50px;
+    border-radius: 10px;
     background-color: #011328;
 }
-.contacto__academia-item-icon{
+.contacto__item-icon-lca{
+    background-color: #ffffff;
+    border-radius: 100%;
     width: 100px;
 }
-.contacto__academia-item-redes-icon{
-    width: 35px;
+.contacto__item-icon-whapp{
+    width: 90px;
 }
-.contacto__academia-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 75%;
-    height: 100%;
+.contacto__item-redes-icon{
+    width: 40px;
 }
-.contacto__academia-info h4, .contacto__desarrollo h4{
-    color: #cbcbcb;
+.contacto__item-icon-uptaeb{
+    width: 120px;
 }
-
+.contacto__item-devs-icon{
+    width: 100px;
+}
+/*----------------------------------------------------------MAPA---------------------------------------------------------*/
 .contacto__academia-ubicacion{
-    width: 100%;
-    height: auto;
-    padding: 30px;
     gap: 10px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -736,46 +730,13 @@ header{
 }
 .contacto__academia-ubicacion-mapa{
     width: 100%;
-    height: 65dvh;
-    margin-bottom: 40px;
+    height: 500px;
 }
-
-.contacto__desarrollo{
-    flex-direction: column;
-    display: flex;
-    margin-bottom: 50px;
-    padding: 30px;
-    width: 100%;
-    gap: 30px;
-}
-.contacto__desarrollo-uptaeb, .contacto__desarrollo-devs, .contacto__academia-item{    
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    height: 360px;
-    padding: 40px;
-    border-radius: 8px;
-}
-.contacto__desarrollo-uptaeb, .contacto__desarrollo-devs{
-    background-color: #011328;
-}
-.contacto__desarrollo-uptaeb-icon{
-    width: 120px;
-}
-.contacto__desarrollo-devs-icon{
-    width: 100px;
-}
-.contacto__desarrollo-devs-list{
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
+/*----------------------------------------------------------MAPA---------------------------------------------------------*/
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
+
+
+
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
 @keyframes aparecer{
     from{
@@ -785,7 +746,7 @@ header{
         opacity: 1;
     }
 }
-@keyframes slider{
+@keyframes carrusel{
     0% { margin-left: 0; }
     20% { margin-left: 0; }
 
@@ -799,6 +760,8 @@ header{
     100% { margin-left: -300%; }
 }
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
+
+
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
 @media (min-width:750px){
     html{
@@ -861,7 +824,7 @@ header{
     .actividades__galery-item-info p{
     width: 70%;
     }
-    .contacto__academia-container, .contacto__desarrollo{
+    .contacto__list{
     flex-direction: row;
     }
 }
