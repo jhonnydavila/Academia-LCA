@@ -108,6 +108,11 @@ header{
     transform: translateY(-2px) scale(1.05);
     color: #d7c74d;
 }
+.header__check{
+    background-color: #8b8b8b62;
+    padding: 5px 15px;
+    border-radius: 6px;
+}
 .header__checkbox{
     display: none;
 }
@@ -137,7 +142,7 @@ header{
     align-items: center;
     text-align: center;
     display: flex;
-    height: 100dvh;
+    height: 90dvh;
     width: 100%;
 }
 .hero-img{
@@ -244,10 +249,11 @@ header{
 /*-------------------------------------------------------FOOTER----------------------------------------------------------*/
 /*----------------------------------------------CONFIGURACIONES GENERALES------------------------------------------------*/
 
-
-
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
 /*------------------------------------------------------HERO INICIO------------------------------------------------------*/
+.inicio__hero{
+    height: 100dvh;
+}
 .inicio__hero-btn{
     background-color: transparent;
     margin-top: 30px;
@@ -281,17 +287,18 @@ header{
     flex-wrap: wrap;
     padding: 20px 0;
     width: 100%;
-    gap: 20px;
+    gap: 25px;
 }
 .inicio__enfoque-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     width: 100%;
-    padding: 20px 0;
-    max-width: 360px;
-    border-radius: 6px;
+    padding: 25px 0;
+    max-width: 370px;
+    border-radius: 8px;
     background-color: #011328;
 }
 .inicio__enfoque-item-icon{
@@ -305,7 +312,7 @@ header{
 }
 /*--------------------------------------------------------ENFOQUE--------------------------------------------------------*/
 .n{
-    background: linear-gradient(90deg, #000000d8,#00000092), url("../img/Asientos-teatro.jpg");
+    background: linear-gradient(90deg, #000000d8,#00000092), url("../img/Asientos-teatro.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +344,6 @@ header{
     justify-content: start;
 }
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
-
 
 
 /*---------------------------------------------------SECCION NOSOTROS----------------------------------------------------*/
@@ -374,16 +380,14 @@ header{
 .nosotros__mvv-list{
     padding: 40px;
     width: 100%;
-    gap: 20px;
+    gap: 18px;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .nosotros__mvv-item{
-    width: 100%;
-    margin: 10px 0;
-    max-width: 600px;
+    max-width: 540px;
 }
 .nosotros__mvv-item-img{
     width: 100%;
@@ -430,7 +434,7 @@ header{
 }
 .nosotros__docentes-item-img{
     object-fit: cover;
-    border: 1px solid #86868626;
+    object-position: top center;
     border-radius: 5px;
     height: 75%;
     width: 100%;
@@ -452,8 +456,6 @@ header{
 }
 /*------------------------------------------------------DOCENTES---------------------------------------------------------*/
 /*---------------------------------------------------SECCION NOSOTROS----------------------------------------------------*/
-
-
 
 /*----------------------------------------------------SECCION CLASES-----------------------------------------------------*/
 /*--------------------------------------------------------CLASES---------------------------------------------------------*/
@@ -510,30 +512,29 @@ header{
 /*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 .programas{
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 40px;
     background: linear-gradient(#000c1a,#00030a);
 }
 .programas-title{
     color: #baaa33;
 }
 .programas-list{
-    padding: 30px 0;
     justify-content: space-evenly;
     align-items: center;
     text-align: left;
     flex-wrap: wrap;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .programas-item{
     position: relative;
     flex-direction: column;
     display: flex;
     border-radius: 8px;
-    height: 40dvh;
+    height: 300px;
     width: 100%;
-    max-width: 620px;
-    background-color: #000000;
+    max-width: 580px;
+    background-color: #000000e0;
 }
 .programas-item:hover{
     box-shadow: 0px 2px 5px 0 #6a6a6a;
@@ -543,17 +544,17 @@ header{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.35;
-    border-radius: 5px;
+    opacity: 0.5;
+    border-radius: 8px;
 }
 .programas-info{
     gap: 5px;
     width: 100%;
     height: 100%;
     padding: 10px 30px;
+    z-index: 1;
     display: flex;
     position: absolute;
-    z-index: 1;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -566,17 +567,42 @@ header{
 .programas-info ul li{
     list-style: square;
 }
-.programas-info div{
-    width: 100%;
-    display: flex;
-    position: static;
-    align-items: center;
-    justify-content: space-between;
-}
 /*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
+/*------------------------------------------------------INSCRIPCION------------------------------------------------------*/
+.programas__inscripcion{
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(#00030a, #2a0202) ;
+}
+.programas__inscripcion-list{
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.programas__inscripcion-item{
+    display: flex;
+    text-align: left;
+    background-color: #011328;
+    border-radius: 10px;
+    max-width: 460px;
+    padding: 35px;
+    width: 100%;
+    gap: 20px;
+}
+.programas__inscripcion-item-img{
+    width: 70px;
+}
+.programas__inscripcion-item-info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+/*------------------------------------------------------INSCRIPCION------------------------------------------------------*/
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
-
-
 
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
 .actividades__main{
@@ -632,29 +658,8 @@ header{
     height: 100%;
     object-fit: cover;
 }
-.actividades__galery-item-info{
-    transition: opacity 0.2s linear;
-    opacity: 0;
-    background-color: #000000b2;
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-    z-index: 20;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.actividades__galery-item-info:hover{
-    opacity: 1;
-}
-.actividades__galery-item-info p{
-    width: 100%;
-}
 /*--------------------------------------------------------GALERIA--------------------------------------------------------*/
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
-
-
 
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
 /*-----------------------------------------------------HERO CONTACTO-----------------------------------------------------*/
@@ -668,7 +673,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     gap: 50px;
 }
 .contacto__list{
@@ -676,7 +681,7 @@ header{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 50px;
+    gap: 40px;
 }
 .contacto__item{
     flex-direction: column;
@@ -734,9 +739,109 @@ header{
     height: 500px;
 }
 /*----------------------------------------------------------MAPA---------------------------------------------------------*/
+.contacto__faq{
+    margin: 50px auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.contacto__faq-list{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    width: 80%;
+    gap: 15px;
+}
+.contacto__faq-item{
+    width: 100%;
+    color: #011328;
+    display: block;
+    text-align: left;
+}
+.contacto__faq-item-title{
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    z-index: 20;
+    padding: 10px 20px;
+    background-color: #d7c74d;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.contacto__faq-item input{
+    display: none;
+}
+.contacto__faq-item-info{
+    height: 0;
+    z-index: 10;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #eddd63;
+    transition: height 0.3s ease;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.contacto__faq-item-info p{
+    padding: 20px;
+}
+.contacto__faq-item input:checked ~ .contacto__faq-item-info{
+    transition: height 0.3s ease;
+    height: 90px;
+}
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
 
-
+.download{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 30px 0;
+    background-color: #011328;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 440px;
+}
+.download-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.download-btn:hover .download-icon{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+.download-link{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.download-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    gap: 5px;
+    color: #e6e6e6;
+}
+.download-title{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.download-span{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.download-icon{
+    width: 20px;
+    height: 20px;
+}
 
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
 @keyframes aparecer{
@@ -762,7 +867,6 @@ header{
 }
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
 
-
 /*-------------------------------------------------------RESPONSIVE------------------------------------------------------*/
 @media (min-width:750px){
     html{
@@ -776,7 +880,7 @@ header{
     }
     .header__nav-list{
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
     height: 70px;
     margin-right: 30px;
@@ -821,9 +925,6 @@ header{
     }
     .actividades__galery-item:nth-child(1), .actividades__galery-item:nth-child(4){
     grid-column-start: span 2;
-    }
-    .actividades__galery-item-info p{
-    width: 70%;
     }
     .contacto__list{
     flex-direction: row;
