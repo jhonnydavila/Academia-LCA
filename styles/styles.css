@@ -512,7 +512,7 @@ header{
 /*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 .programas{
     text-align: center;
-    padding: 30px 40px;
+    padding: 30px 10px;
     background: linear-gradient(#000c1a,#00030a);
 }
 .programas-title{
@@ -571,6 +571,7 @@ header{
 /*------------------------------------------------------INSCRIPCION------------------------------------------------------*/
 .programas__inscripcion{
     text-align: center;
+    padding: 0 20px;
     padding-bottom: 50px;
     background: linear-gradient(#00030a, #2a0202) ;
 }
