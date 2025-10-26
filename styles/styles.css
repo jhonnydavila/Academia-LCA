@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 html{
     font-size: 10px;
@@ -170,6 +171,17 @@ header{
 .hero-info h2{
     color:#baaa33;
 }
+.subtitle-container{
+    max-width: 880px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.subtitle{
+    color: #baaa33;
+}
 /*--------------------------------------------------------HEROS----------------------------------------------------------*/
 /*-------------------------------------------------------BOTONES---------------------------------------------------------*/
 .scroll{
@@ -233,18 +245,31 @@ header{
 }
 /*------------------------------------------------------BOTONES----------------------------------------------------------*/
 /*-------------------------------------------------------FOOTER----------------------------------------------------------*/
-.footer__derechos div{
-    padding: 12px 0;
-    background-color: #242424;
-    justify-content: center;
-    align-content: center;
+
+.footer__list{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(#00030a);
+    padding: 20px 25px;
 }
-.footer__derechos-info{
-    justify-content: center;
-    align-content: center;
+.footer__item{
     display: flex;
-    width: 80%;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    justify-content: center;
+    align-items: center;
+}
+.footer__info-list-menu{
+    display: flex;
+    gap: 10px;
+}
+.footer__item-icon-uptaeb{
+    width: 100px;
 }
 /*-------------------------------------------------------FOOTER----------------------------------------------------------*/
 /*----------------------------------------------CONFIGURACIONES GENERALES------------------------------------------------*/
@@ -291,15 +316,20 @@ header{
 }
 .inicio__enfoque-item{
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    transition: transform 0.3s ease-in-out;
     gap: 10px;
     width: 100%;
-    padding: 25px 0;
+    padding: 20px 0;
     max-width: 370px;
     border-radius: 8px;
     background-color: #011328;
+}
+.inicio__enfoque-item:hover{
+    box-shadow: 0px 2px 3px 0 #766800;
+    transform: translateY(-2px) scale(1.05);
 }
 .inicio__enfoque-item-icon{
     width: 50px;
@@ -317,31 +347,23 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 40dvh;
+    height: 180px;
     display: flex;
 }
 .n-info{
     display: flex;
-    align-items: start;
+    align-items: left;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 30px;
-    max-width: 1000px;
+    padding: 20px;
+    max-width: 1100px;
 }
 .n-info h3{
-    font-size: 2rem;
     font-weight: 700;
-    width: 90%;
-    padding: 10px 0;
-}
-.n-btn{
     width: 100%;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    padding: 10px 0;
 }
 /*----------------------------------------------------SECCION INICIO-----------------------------------------------------*/
 
@@ -378,16 +400,16 @@ header{
     background: linear-gradient(#2a0202, #000c1a);
 }
 .nosotros__mvv-list{
-    padding: 40px;
+    padding: 30px;
     width: 100%;
-    gap: 18px;
+    gap: 14px;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .nosotros__mvv-item{
-    max-width: 540px;
+    max-width: 520px;
 }
 .nosotros__mvv-item-img{
     width: 100%;
@@ -512,11 +534,8 @@ header{
 /*-------------------------------------------------------PROGRAMAS-------------------------------------------------------*/
 .programas{
     text-align: center;
-    padding: 30px 10px;
+    padding: 40px 10px;
     background: linear-gradient(#000c1a,#00030a);
-}
-.programas-title{
-    color: #baaa33;
 }
 .programas-list{
     justify-content: center;
@@ -524,16 +543,17 @@ header{
     text-align: left;
     flex-wrap: wrap;
     display: flex;
+    padding: 10px 0;
     gap: 30px;
-}
+} 
 .programas-item{
     position: relative;
     flex-direction: column;
     display: flex;
-    border-radius: 8px;
+    border-radius: 6px;
     height: 240px;
     width: 100%;
-    max-width: 460px;
+    max-width: 480px;
     background-color: #000000e0;
 }
 .programas-item:hover{
@@ -551,7 +571,7 @@ header{
 .programas-info{
     width: 100%;
     height: 100%;
-    padding: 10px 30px;
+    padding: 20px 30px;
     z-index: 1;
     display: flex;
     position: absolute;
@@ -570,8 +590,7 @@ header{
 /*------------------------------------------------------INSCRIPCION------------------------------------------------------*/
 .programas__inscripcion{
     text-align: center;
-    padding: 0 20px;
-    padding-bottom: 50px;
+    padding: 40px 20px;
     background: linear-gradient(#00030a, #2a0202) ;
 }
 .programas__inscripcion-list{
@@ -586,8 +605,8 @@ header{
     text-align: left;
     background-color: #011328;
     border-radius: 10px;
-    max-width: 460px;
-    padding: 35px;
+    max-width: 430px;
+    padding: 30px;
     width: 100%;
     gap: 20px;
 }
@@ -600,6 +619,13 @@ header{
     justify-content: center;
     flex-direction: column;
     gap: 6px;
+}
+.programas__inscripcion-item-info span a{
+    color: #888888;
+    text-decoration: underline;
+}
+.programas__inscripcion-item-info span a:hover{
+    color: #1a4f8b;
 }
 /*------------------------------------------------------INSCRIPCION------------------------------------------------------*/
 /*---------------------------------------------------SECCION PROGRAMAS---------------------------------------------------*/
@@ -642,8 +668,8 @@ header{
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto fill, 1fr);
-    grid-template-rows: 330px;
-    grid-gap: 15px;
+    grid-template-rows: 300px;
+    grid-gap: 20px;
     width: 100%;
 }
 .actividades__galery-item{
@@ -651,12 +677,21 @@ header{
     position: relative;
     align-items: center;
     justify-content: center;
+    background-color: #000000;
 
 }
 .actividades__galery-item-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(1);
+    opacity: 0.6;
+}
+.actividades__galery-item-img:hover{
+    transform: scale(1.02);
+    transition: all .4s ease-in-out;
+    filter: grayscale(0);
+    opacity: 1;
 }
 /*--------------------------------------------------------GALERIA--------------------------------------------------------*/
 /*--------------------------------------------------SECCION ACTIVIDADES--------------------------------------------------*/
@@ -674,21 +709,20 @@ header{
     align-items: center;
     justify-content: center;
     padding: 40px 40px 0px 40px;
-    gap: 50px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 .contacto__list{
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     gap: 40px;
 }
 .contacto__item{
     flex-direction: column;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     width: 100%;
-    height: 100%;
 }
 .contacto__item-info{
     display: flex;
@@ -698,9 +732,9 @@ header{
     justify-content: center;
     gap: 10px;
     width: 100%;
-    height: 350px;
-    padding: 50px;
-    border-radius: 10px;
+    height: 320px;
+    padding: 40px;
+    border-radius: 8px;
     background-color: #011328;
 }
 .contacto__item-icon-lca{
@@ -718,7 +752,7 @@ header{
     width: 120px;
 }
 .contacto__item-devs-icon{
-    width: 100px;
+    width: 90px;
 }
 /*----------------------------------------------------------MAPA---------------------------------------------------------*/
 .contacto__academia-ubicacion{
@@ -736,75 +770,21 @@ header{
 }
 .contacto__academia-ubicacion-mapa{
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 /*----------------------------------------------------------MAPA---------------------------------------------------------*/
-.contacto__faq{
-    margin: 50px auto;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-}
-.contacto__faq-list{
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    margin-top: 15px;
-    width: 80%;
-    gap: 15px;
-}
-.contacto__faq-item{
-    width: 100%;
-    color: #011328;
-    display: block;
-    text-align: left;
-}
-.contacto__faq-item-title{
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    z-index: 20;
-    padding: 10px 20px;
-    background-color: #d7c74d;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.contacto__faq-item input{
-    display: none;
-}
-.contacto__faq-item-info{
-    height: 0;
-    z-index: 10;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #eddd63;
-    transition: height 0.3s ease;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-.contacto__faq-item-info p{
-    padding: 20px;
-}
-.contacto__faq-item input:checked ~ .contacto__faq-item-info{
-    transition: height 0.3s ease;
-    height: 90px;
-}
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
 .download{
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: #007470;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 270px;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 220px;
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     z-index: 999;
 }
 .download-btn{
@@ -833,15 +813,13 @@ header{
     color: #e6e6e6;
 }
 .download-title{
-    margin-left: 10px;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .download-span{
-    margin-left: 8px;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 .download-icon{
-    width: 40px;
+    width: 35px;
 }
 /*----------------------------------------------------SECCION CONTACTO---------------------------------------------------*/
 /*------------------------------------------------------ANIMACIONES------------------------------------------------------*/
@@ -882,7 +860,7 @@ header{
     flex-direction: row;
     gap: 25px;
     width: 100%;
-    height: 80px;
+    height: 70px;
     margin-right: 30px;
     }
     .header__open-nav-button{

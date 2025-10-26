@@ -13,6 +13,25 @@
 </head>
     <body>
         <main>
+            <header id="scroll">
+                <div class="header container" id="e">
+                    <input type="checkbox" class="header__checkbox" id="open-menu">
+                    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-info"><img src="img/Logos/LCA.png" class="header__logo-img" alt="logo_academmia_lca">Academia LCA</a>
+                    </div>
+                    <nav class="header__nav" id="e">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="index.html" class="header__check">Inicio</a></li>
+                            <li class="header__nav-item"><a href="nosotros.html">Nosotros</a></li>
+                            <li class="header__nav-item"><a href="programas.html">Programas</a></li>
+                            <li class="header__nav-item"><a href="clases.html">Clases</a></li>
+                            <li class="header__nav-item"><a href="galeria.html">Galería</a></li>
+                            <li class="header__nav-item"><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
             <section class="inicio__hero hero">
                 <img src="img/image6.webp" class="hero-img" alt="">
                 <div class="hero-info container">
@@ -29,25 +48,6 @@
             <div class="scroll">
                 <a href="#top"><img src="img/icon/scroll top.svg" alt="" class="scroll-icon"></a>
             </div>
-            <header id="scroll">
-                <div class="header container" id="e">
-                    <input type="checkbox" class="header__checkbox" id="open-menu">
-                    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
-                    <div class="header__logo">
-                        <a href="index.html" class="header__logo-info"><img src="img/Logos/LCA.png" class="header__logo-img" alt="logo_academmia_lca">Academia LCA</a>
-                    </div>
-                    <nav class="header__nav" id="e">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="index.html" class="header__check">Inicio</a></li>
-                            <li class="header__nav-item"><a href="nosotros.html">Nosotros</a></li>
-                            <li class="header__nav-item"><a href="programas.html">Programas</a></li>
-                            <li class="header__nav-item"><a href="clases.html">Clases</a></li>
-                            <li class="header__nav-item"><a href="actividades.html">Actividades</a></li>
-                            <li class="header__nav-item"><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
             <section class="inicio__enfoque">
                 <div class="container">
                     <h2 class="inicio__enfoque-title" id="scroll">Nuestra Academia</h2>
@@ -81,17 +81,60 @@
                 <div class="n-info container">
                     <h3>Contactanos y forma parte de nuestra academia y
                     se tú el proximo protagonista de nustros shows</h3>
-                    <div class="n-btn">
-                        <button class="btn-1"><a href="contacto.html">Contactar</a></button>
-                        <button class="btn-2"><a download="Planilla-LCA" href="download/planilla.pdf" >Requisitos</a></button>
-                    </div>
+                </div>
+            </div>
+            <div class="programas__inscripcion">
+                <h2>Pasos para Inscribirse</h2>
+                <div class="programas__inscripcion-list container">
+                    <li class="programas__inscripcion-item">
+                        <img src="img/icon/select-svgrepo-com.svg" class="programas__inscripcion-item-img" alt="">
+                        <div class="programas__inscripcion-item-info">
+                            <h4>Paso 1: Elegir</h4>
+                            <p>Explora nuestros programas y 
+                            elige el que mejor se adapte a tus 
+                            intereses y objetivos artísticos.
+                            <span><a href="">Ver más</a></span></p>
+                        </div>
+                    </li>
+                    <li class="programas__inscripcion-item">
+                        <img src="img/icon/document-svgrepo-com.svg" class="programas__inscripcion-item-img" alt="">
+                        <div class="programas__inscripcion-item-info">
+                            <h4>Paso 2: Requisitos</h4>
+                            <p>Revisa los requisitos de inscripción 
+                            y rellena la planilla de inscripción. 
+                            <span><a href="">Ver más</a></span></p>
+                        </div>
+                    </li>
+                    <li class="programas__inscripcion-item">
+                        <img src="img/icon/phone-handset-svgrepo-com.svg" class="programas__inscripcion-item-img" alt="">
+                        <div class="programas__inscripcion-item-info">
+                            <h4>Paso 3: Contactar</h4>
+                            <p>Comunícate con nuestro equipo a través 
+                            de nuestro para concluir la inscripción.
+                            <span><a href="">Ver más</a></span></p>
+                        </div>
+                    </li>
                 </div>
             </div>  
         </main>
         <footer>
-            <div class="footer__derechos">
-                <div class="footer__derechos-container">
-                    <p class="footer__derechos-info">&copy; 2025 Todos los derechos reservados.</p>
+            <div class="footer__list">
+                <div class="footer__item">
+                    <h3 class="footer__info-title">Desarrolladores</h3>
+                    <ul class="footer__info-list">
+                        <li><p>Jesús D. Pérez B.</p></li>
+                        <li><p>Jhosber L. Gil B.</p></li>
+                        <li><p>Jhonny D. Dávila R.</p></li>
+                        <li><p>Jasneli E. Rodríguez H.</p></li>
+                        <li><p>Beritzon R. Colmenares T.</p></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <img src="img/Logos/uptaeblogo.svg" alt="Cintillo de la UPTAEB" class="footer__item-icon-uptaeb">
+                    <h4 class="footer__info">Este sitio web fue desarrollado como un proyecto sociotecnologico por la UPTAEB.</h4>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__info">&copy; 2025 Todos los derechos reservados.</h4>
                 </div>
             </div>
         </footer>
